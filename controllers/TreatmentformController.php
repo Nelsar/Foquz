@@ -3,11 +3,12 @@
 namespace app\controllers;
 
 use yii\rest\ActiveController;
-use app\models\Coursedisease;
+use app\models\Treatmentform;
 
-class СoursediseaseController extends ActiveController
+class TreatmentformController extends \yii\rest\ActiveController
 {
-    public $modelClass = Coursedisease::class;
+
+    public $modelClass = Treatmentform::class;
 
     public function behaviors()
     {
@@ -29,4 +30,5 @@ class СoursediseaseController extends ActiveController
     {
         return $this->render('index');
     }
+
 }
