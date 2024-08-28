@@ -12,15 +12,15 @@ class m240827_165605_m240827_165508_add_route_status_child_child_to_auth_item_ch
      */
     public function safeUp()
     {
-        $this->insert('auth_item', [
-            'name' => '/status/*',
-            'type' => 1,
-            'description' => null,
-            'data' => null,
-            'created_at' => 1724574362,
-            'updated_at' => 1724574362,
-            'group_code' => null
-        ]);
+        // $this->insert('auth_item', [
+        //     'name' => '/status/*',
+        //     'type' => 1,
+        //     'description' => null,
+        //     'data' => null,
+        //     'created_at' => 1724574362,
+        //     'updated_at' => 1724574362,
+        //     'group_code' => null
+        // ]);
     }
 
     /**
@@ -28,7 +28,15 @@ class m240827_165605_m240827_165508_add_route_status_child_child_to_auth_item_ch
      */
     public function safeDown()
     {
-        
+        // $this->delete('auth_item', [
+        //     'name' => '/status/*',
+        //     'type' => 1,
+        //     'description' => null,
+        //     'data' => null,
+        //     'created_at' => 1724574362,
+        //     'updated_at' => 1724574362,
+        //     'group_code' => null
+        // ]);
     }
 
     /*
