@@ -2,19 +2,18 @@
 
 namespace app\controllers;
 
-use yii\rest\ActiveController;
 use app\models\Coursedisease;
 
-class СoursediseaseController extends ActiveController
+class СoursediseaseController extends \yii\rest\ActiveController
 {
     public $modelClass = Coursedisease::class;
 
     public function behaviors()
     {
         return [
-            // 'ghost-access' => [
-            //     'class' => 'webvimark\modules\UserManagement\components\GhostAccessControl'
-            // ],
+            'ghost-access' => [
+                'class' => 'webvimark\modules\UserManagement\components\GhostAccessControl'
+            ],
             'contentNegotiator' => [
                 'class' => \yii\filters\ContentNegotiator::class,
                 'formatParam' => 'format',

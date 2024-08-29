@@ -8,7 +8,6 @@ use app\models\Polyclinic;
 class PolyclinicController extends ActiveController
 {
     public $modelClass = Polyclinic::class;
-    //public $freeAccess = ['index'];
 
     public function behaviors()
     {

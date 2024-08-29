@@ -10,9 +10,9 @@ class StatusController extends \yii\rest\ActiveController
     public function behaviors()
     {
         return [
-            // 'ghost-access' => [
-            //     'class' => 'webvimark\modules\UserManagement\components\GhostAccessControl'
-            // ],
+            'ghost-access' => [
+                'class' => 'webvimark\modules\UserManagement\components\GhostAccessControl'
+            ],
             'contentNegotiator' => [
                 'class' => \yii\filters\ContentNegotiator::class,
                 'formatParam' => 'format',
